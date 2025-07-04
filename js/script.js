@@ -12,13 +12,18 @@
 
 const emailList = ["Email1, Email2, Email3, Email4, Email5, Email6, Email7, Email8,"]
 
-//prompt per chiedere email all'utente//
+const emailRequest = parseInt(prompt("inserisci la tua email")) 
 
-emailList= parseInt(prompt("inserisci la tua email"))
 
 //controllare che sia in lista
 
+if(emailRequest==emailList){
+    console.log("L'email digitata è presente in lista")
+}
 
+else{
+    console.log("L'email digitata non è presente in lista")
+}
 
 
 //stampare messaggio sull'esito di controllo//
