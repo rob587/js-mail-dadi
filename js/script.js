@@ -14,9 +14,11 @@ const emailList = ["Email1, Email2, Email3, Email4, Email5, Email6, Email7, Emai
 
 //prompt per chiedere email all'utente//
 
-
+emailList= parseInt(prompt("inserisci la tua email"))
 
 //controllare che sia in lista
+
+
 
 
 //stampare messaggio sull'esito di controllo//
