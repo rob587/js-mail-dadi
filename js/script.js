@@ -49,7 +49,6 @@ if(emailFound){
  let pcPoints= 0
  let userPoints= 0
 
- console.log(Math.floor(Math.random()* 6) + 1)
 
  for( let i = 1; i<=6; i++){
      const pcNumber = Math.floor(Math.random()* 6) + 1;
