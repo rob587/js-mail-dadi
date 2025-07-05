@@ -35,3 +35,46 @@ if(emailFound){
 }
 
 
+//------------------------//
+
+// Gioco dei dadi
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+//variabili//
+
+ const randomPcNumbers = []
+ const userNumbers = []
+
+ let pcPoints= 0
+ let userPoints= 0
+
+ console.log(Math.floor(Math.random()* 6) + 1)
+
+ for( let i = 1; i<=6; i++){
+     const pcNumber = Math.floor(Math.random()* 6) + 1;
+     const userNumber = parseInt(prompt("inserisci il numero"))
+
+     randomPcNumbers.push(pcNumber)
+     userNumbers.push(userNumber)
+
+    if(pcNumber>userNumber){
+         pcPoints++;
+ }
+
+     else if(pcNumber<userNumber){
+         userPoints++
+     }
+}
+
+console.log(`Punteggio PC: ${pcPoints}`);
+console.log(`Punteggio Utente: ${userPoints}`);
+
+
+if (pcPoints > userPoints) {
+    console.log("Ha vinto il computer!");
+} else if (userPoints > pcPoints) {
+    console.log("Hai vinto tu!");
+} else {
+    console.log("È un pareggio!");
+}
