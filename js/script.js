@@ -10,20 +10,28 @@
 
 //dichiarazione variabile email ergo creare un array di email//
 
-const emailList = ["Email1, Email2, Email3, Email4, Email5, Email6, Email7, Email8,"]
+const emailList = ["Email1", "Email2", "Email3", "Email4", "Email5", "Email6", "Email7", "Email8"]
 
-const emailRequest = parseInt(prompt("inserisci la tua email")) 
+const emailRequest =(prompt("inserisci la tua email")) 
 
+let emailFound = false
 
 
 //stampare messaggio sull'esito di controllo//
 
 for (let i=0; i<emailList.length; i++){
     if(emailList[i]==emailRequest){
-        console.log("L'email digitata è presente in lista")
+        emailFound = true;
     }
 
-    else{
-        console.log("L'email digitata non è presente in lista")
-    }
 }
+
+if(emailFound){
+    console.log("L'email digitata è presente in lista")
+
+
+}else{
+    console.log("L'email digitata non è presente in lista")
+}
+
+
